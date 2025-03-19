@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Recursive:wght,CASL,CRSV@300..1000,1,1&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Cairo;
+}
+
+:root {
+  --main-color: #571faf;
+  --secondary-color: #ff7701;
+  --third-color: #999999;
+}
+
+.p-password.p-component.p-inputwrapper.p-input-icon-right{
+  width: 100% !important;
+}

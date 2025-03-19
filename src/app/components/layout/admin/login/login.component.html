@@ -1,0 +1,81 @@
+<div class="container w-50 p-0 ">
+    <div class="img-frame"></div>
+    <div
+      class="login-box p-5 d-flex justify-content-center align-items-center flex-column flex-grow-1"
+    >
+      <h2 class="mb-4 fw-bold fs-2">Welcome Back!</h2>
+      <form class="w-100">
+        <div class="email-box mb-4 w-100  position-relative">
+          <label for="email">Email <span>*</span></label>
+          <input
+            class="form-control w-100 p-3 fs-6"
+            required=""
+            name="email"
+            type="email"
+            placeholder="Example@gmail.com"
+          />
+         </div>
+         <div class="item w-100 d-flex ">
+          <label for="newPassword">"New password"</label>
+          <p-password 
+          id="newPassword" 
+          [placeholder]="'enter new password'" 
+          formControlName="password"
+          [feedback]="false"
+          [toggleMask]="true"/>
+      </div>
+
+         <!-- <div class=" position-relative d-flex mb-4">
+          <p-password [(ngModel)]="value" [toggleMask]="true" />
+         </div> -->
+        
+         <!--
+        <div class="input-group password-box position-relative d-flex mb-4">
+          <label for="password">Password <span>*</span></label>
+          <input
+            type="password"
+            class="password rounded-start pe-0 p-3"
+            placeholder="*************"
+            aria-label="password"
+          />
+          <button class="btn password-btn p-1" type="button">
+            <img src="./assets/EasyEdu-img/mdi_eye-off.png" alt="img" />
+          </button>
+        </div> -->
+
+        <div class="row d-flex justify-content-between">
+          <div class="col">
+            <input type="checkbox" name="remember-me" id="remember-me" />
+            <label class="fs-5 ps-3" for="remember-me">Remember Me</label>
+          </div>
+          <div  class="col-auto">
+            <a class="forget fw-simebold fs-5">Forgot Password ?</a>
+          </div>
+        </div>
+        <button
+        routerLink="forgetpassword"
+          
+          type="submit"
+          class="btn sign-in fs-4 fw-bold text-light p-2 w-100 my-4"
+        >
+          Sign In
+        </button>
+        <p class="newAcc fw-simebold fs-5 text-center">
+          Don't Have An Account? <a href="#">Create A New Account</a>
+        </p>
+        <p class="separtor position-relative text-center m-0">
+          Sign In With Google
+        </p>
+        <button  type="button" class="btn google-sign-up w-100 my-4">
+          <img
+            src="https://img.icons8.com/?size=500&id=17949&format=png&color=000000"
+            alt=""
+          />
+          Sign IN With Google
+        </button>
+        
+      </form>
+    </div>
+  </div>
+  
+  
