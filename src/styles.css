@@ -14,4 +14,9 @@
 
 .p-password.p-component.p-inputwrapper.p-input-icon-right{
   width: 100% !important;
+  input{
+    width: 100% !important;
+  }
 }
+
+

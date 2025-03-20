@@ -15,15 +15,9 @@
             placeholder="Example@gmail.com"
           />
          </div>
-         <div class="item w-100 d-flex ">
-          <label for="newPassword">"New password"</label>
-          <p-password 
-          id="newPassword" 
-          [placeholder]="'enter new password'" 
-          formControlName="password"
-          [feedback]="false"
-          [toggleMask]="true"/>
-      </div>
+
+         <p-password [(ngModel)]="value" [toggleMask]="true" />
+
 
          <!-- <div class=" position-relative d-flex mb-4">
           <p-password [(ngModel)]="value" [toggleMask]="true" />

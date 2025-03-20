@@ -12,6 +12,6 @@ import { PasswordModule } from 'primeng/password';
 })
 export class LoginComponent {
   value!: string;
-  constructor(private injector: Injector){}
+  constructor(){}
 
 }
